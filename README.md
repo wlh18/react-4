@@ -266,6 +266,8 @@ This will bring it into library into our code so we can use it.
 
 ### Using Axios
 
+> Note: Refer to 'src/App.js' for an example
+
 Axios returns a `promise` in Javascript. A promise is a special object in javascript that will hold a response object from an http request.
 
 This allows us to asynchronously handle Javascript code.
