@@ -117,3 +117,63 @@ The `REST` methods and The `CRUD` operations correlate with each other like so:
 * Put - Update
 
 * Delete - Delete
+
+## Synchronous
+
+Javascript is a `synchronous` language. This means that it can only have one thing happen at a time.
+
+This causes a problem for us when we need to make an `HTTP request` to a server because requests can sometimes take a large amount of time to receieve a response. Since Javascript is synchronous, it will just make the request then think it's done. Meaning that when we recieve a response from the request it will not do anything with that response. 
+
+So we need to make our code run `asynchronous`.
+
+## Asynchronous
+
+`Asynchronous` Javascript will allow us to make a request then execute the rest of our code, then once we receive a response from our request, it will handle it.
+
+This makes it so our application can still run and perform correctly.
+
+> Note: this is a very high level overview of the two topics, so go ahead do some personal study to learn more about synchronous code, asynchronous code, and the call stack!
+
+## Component Lifecycle
+
+Before we start to implement what we have just discussed in React, let's review the `Component Lifecycle`.
+
+The `Component Lifecycle` is the term we use to dictate the the time a component exist to the time the component no longer exists in our web browser.
+
+We can use some built in `Lifecycle Hooks` to execute logic based off of the current stage of "life" the component is in.
+
+> Note: We can only use these lifecycle hooks inside of a class component
+
+### componentDidMount
+
+`componentDidMount` is the hook we can use to have code immediately executed when the component `mounts` to the web page.
+
+```javascript
+class Example extends Component {
+    constructor(){
+        super()
+
+        this.state = {
+            example: true
+        }
+    }
+
+    // Component Did Mount Lifecycle Hook
+    componentDidMount(){
+        // Anything inside of here will be exectued when the component mounts
+        alert('Hello World!')
+    }
+
+    render(){
+        return (
+            <div>
+                <h1>This is an example class component to show off the component did mount hook</h1>
+            </div>
+        )
+    }
+}
+```
+
+## Axios
+
+Axios is the library that we will be using to create `asynchronous http requests`. 
