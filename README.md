@@ -46,3 +46,32 @@ The body does not always have to have information inside of it. It's okay to kee
 
 A good example of this is if we have a form on our webpage and we hit the submit button, it then will perform a request and send the information that we typed into the form throught the `body` of the request.
 
+## JSON
+
+`JSON` is the format that we can use to structure our data that is being sent in the request.
+
+JSON is short for `Javascript Object Notation`. This is how we will transfer information between different languages.
+
+JSON looks very similar to a Javascript object, but the key/value pairs are wrapped in double quotes, however `numbers` do not.
+
+```json
+{
+    "name": "tayte",
+    "age": 22,
+    "hobbies": [
+        "snowboarding",
+        "video games",
+        "cars"
+    ],
+    "car": {
+        "make": "subaru",
+        "year": 2014
+    }
+}
+```
+
+Notice how we can still send arrays and objects inside of JSON.
+
+We also can not have a trailing comma on our object.
+
+## REST
