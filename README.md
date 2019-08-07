@@ -103,3 +103,17 @@ Delete - This is for removing data.
 Interacting with an API using all four of these methods are a way that we can follow a concept called `CRUD`.
 
 ## CRUD
+
+CRUD is the model that is followed to setup the basic functionalities for an API.
+
+CRUD is short for `Create`, `Read`, `Update`, and `Delete`. These are the four basic functionalities that will make an API "complete".
+
+The `REST` methods and The `CRUD` operations correlate with each other like so:
+
+* Post - Create
+
+* Get - Read
+
+* Put - Update
+
+* Delete - Delete
