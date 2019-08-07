@@ -12,6 +12,26 @@ This is the protocol that we follow when making a network or a `http request`.
 
 We do this by making an http request to a URL.
 
+### Query
+
+The `query` of the request is extra information that we can apply to the URL. This is usually used to find specific values.
+
+Queries start with a `?` then use a key value pair.
+
+Example: http://example.com/people/?name=tayte
+
+Above, I'm looking for a user named 'tayte'
+
+### Params
+
+The `params` are extra parts of our URL to send data. It works like a query almost, but we don't need a `?` or a key/value pair.
+
+We just prefix the param with a backslash.
+
+Example: http://example.com/people/tayte
+
+Above, 'tayte' is the param.
+
 ## URL
 
 URL stands for `Uniform Rescouce Locator`.
@@ -216,6 +236,8 @@ class Example extends Component {
 }
 ```
 
+This will only be executed once, and will not be executed on a `re-render` from updating state.
+
 ## Axios
 
 Axios is the library that we will be using to create `asynchronous http requests`.
@@ -244,3 +266,62 @@ This will bring it into library into our code so we can use it.
 
 ### Using Axios
 
+Axios returns a `promise` in Javascript. A promise is a special object in javascript that will hold a response object from an http request.
+
+This allows us to asynchronously handle Javascript code.
+
+```javascript
+const promise = axios.get('http://swapi.co/api/people');
+```
+
+We can then use this `promise` object to handle data that comes back from the response. If it is a successful promise, it will `resolve` and if it resolves we will use a `.then()` method.
+
+The `.then()` method accepts a callback function as argument. The `response` param in the callback is where we have access to the object returned from the response.
+
+The data sent back from the server will be stored on the `data` property of the response.
+
+```javascript
+promise.then((response) => {
+    console.log(response.data)
+})
+```
+
+If there is a failure in anyway, we can handle it by using a `.catch()`. We chain this method onto the `.then()` so we can "catch" the error.
+
+```javascript
+promise.then((response) => {
+    console.log(response.data)
+}).catch((error) => {
+    console.log(error)
+});
+```
+
+#### Axios Methods
+
+There are four methods that we will be using from the `axios` library.
+
+GET - This method will recieve a url as an argument to make a `get request` to. This acts as the `read` of our CRUD.
+
+```javascript
+const promise = axios.get('http://website.com/api/');
+```
+
+POST - This method uses two arguments, the url to hit and an object for the body of the request. This acts as the `create` of CRUD.
+
+```javascript
+const promise = axios.post('http://website.com/api/', {name: 'tayte'});
+```
+
+PUT - This method uses two arguments, the url to hit and an object for the body of the request. This acts as the `update` of CRUD.
+
+```javascript
+const promise = axios.put('http://website.com/api/', {name: 'tayte'});
+```
+
+DELETE - This method will recieve the url to hit as an argument. This acts as the `delete` of our CRUD.
+
+> We will usually send some information through the params
+
+```javascript
+const promise = axios.delete('http://website.com/people/2');
+```
