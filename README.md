@@ -75,3 +75,31 @@ Notice how we can still send arrays and objects inside of JSON.
 We also can not have a trailing comma on our object.
 
 ## REST
+
+REST stands for `Representational State Transfer`.
+
+This is an architecture or design concept for transfering our data.
+
+This applies a set rules and constraints to allow different systems to talk to each other.
+
+This is the design concept that we will use to talk to a `RESTful API`.
+
+## RESTful API
+
+API stands for `Application Programming Interface`.
+
+An API is a layer that we can interact with to send and get information from a server.
+
+A `RESTful API` follows a design pattern that uses the four parts of REST to interact with it: `post`, `put`, `get`, and `delete`.
+
+Post - This is used for adding new data.
+
+Get - This is used for retreiving data.
+
+Put - This is for updating data. It's easy to remember this because put has a 'u' in it and update startes with it.
+
+Delete - This is for removing data.
+
+Interacting with an API using all four of these methods are a way that we can follow a concept called `CRUD`.
+
+## CRUD
