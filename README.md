@@ -144,7 +144,49 @@ We can use some built in `Lifecycle Hooks` to execute logic based off of the cur
 
 > Note: We can only use these lifecycle hooks inside of a class component
 
-### componentDidMount
+### Constructor
+
+The `constructor` method is the first lifecycyle hook that is fired. It is used to invoke `super()` and set the `props` object to the component.
+
+```javascript
+class Example extends Component {
+    // the constructor function invoking super and setting state
+    constructor(){
+        super()
+
+        this.state = {
+            example: true
+        }
+    }
+
+    render(){
+        return (
+            <div>
+                <h1>This is an example class component to show off the component did mount hook</h1>
+            </div>
+        )
+    }
+}
+```
+
+### Render
+
+The `render` method is executed when the component `mounts` to the page. This should be where we return the `JSX` to make up the display for the component.
+
+```javascript
+class Example extends Component {
+    // render is the lifecycle hook that returns jsx to create a display for our component
+    render(){
+        return (
+            <div>
+                <h1>This is an example class component to show off the component did mount hook</h1>
+            </div>
+        )
+    }
+}
+```
+
+### Component Did Mount
 
 `componentDidMount` is the hook we can use to have code immediately executed when the component `mounts` to the web page.
 
@@ -176,4 +218,29 @@ class Example extends Component {
 
 ## Axios
 
-Axios is the library that we will be using to create `asynchronous http requests`. 
+Axios is the library that we will be using to create `asynchronous http requests`.
+
+### Install Axios
+
+We first need to install `axios` from the package manager.
+
+In your terminal, make sure that you are in the current project directory, then run:
+
+```bash
+$ npm install axios --save
+```
+
+This will install the library into your project so we have access to the built-in methods needed.
+
+### Import Axios
+
+At the top of the file that we plan to use `axios`, go ahead and `import` the package in.
+
+```javascript
+import axios from 'axios'
+```
+
+This will bring it into library into our code so we can use it.
+
+### Using Axios
+
