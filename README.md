@@ -1,68 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Four
 
-## Available Scripts
+In this lecture we talk about the interwebs and how we can pass data over the network.
 
-In the project directory, you can run:
+## HTTP(S)
 
-### `npm start`
+HTTP stand for `Hyper Text Transfer Protocol`.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The `(S)` stands for secure. If a web sites url is prefixed with `HTTPS` then it will usually have a green lock next to it meaning that this site is secure to send information to it over the interwebs.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+This is the protocol that we follow when making a network or a `http request`.
 
-### `npm test`
+We do this by making an http request to a URL.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## URL
 
-### `npm run build`
+URL stands for `Uniform Rescouce Locator`.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The URL is a mixture of the protocol, domain, and enpoint being requested.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+`https://devmountain.com/about.html`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Above is an example of a `URL`.
 
-### `npm run eject`
+Protocol - https://
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Domain - devmountain.com
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+EndPoint - /about.html
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Parts Of A Request
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+When a request is made to a URL, there are two portions that make up the request.
 
-## Learn More
+### Header
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The `header` is the part of the request that holds information about the request we are making and the response that we receive.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The header can contain information about parts of the request like status codes, 
 
-### Code Splitting
+### Body
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+The body is an optional part of the request. This is where we will store the data that we want to send through the request.
 
-### Analyzing the Bundle Size
+The body does not always have to have information inside of it. It's okay to keep it empty if need be.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+A good example of this is if we have a form on our webpage and we hit the submit button, it then will perform a request and send the information that we typed into the form throught the `body` of the request.
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
