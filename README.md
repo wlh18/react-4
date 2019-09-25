@@ -4,11 +4,11 @@ In this lecture we talk about the interwebs and how we can pass data over the ne
 
 ## HTTP(S)
 
-HTTP stand for `Hyper Text Transfer Protocol`.
+HTTP stands for `Hyper Text Transfer Protocol`.
 
 The `(S)` stands for secure. If a web sites url is prefixed with `HTTPS` then it will usually have a green lock next to it meaning that this site is secure to send information to it over the interwebs.
 
-This is the protocol that we follow when making a network or a `http request`.
+This is the protocol that we follow when making a network or an `http request`.
 
 We do this by making an http request to a URL.
 
@@ -34,9 +34,9 @@ Above, 'tayte' is the param.
 
 ## URL
 
-URL stands for `Uniform Rescouce Locator`.
+URL stands for `Uniform Resource Locator`.
 
-The URL is a mixture of the protocol, domain, and enpoint being requested.
+The URL is a mixture of the protocol, domain, and endpoint being requested.
 
 `https://devmountain.com/about.html`
 
@@ -64,7 +64,7 @@ The body is an optional part of the request. This is where we will store the dat
 
 The body does not always have to have information inside of it. It's okay to keep it empty if need be.
 
-A good example of this is if we have a form on our webpage and we hit the submit button, it then will perform a request and send the information that we typed into the form throught the `body` of the request.
+A good example of this is if we have a form on our webpage and we hit the submit button, it then will perform a request and send the information that we typed into the form through the `body` of the request.
 
 ## JSON
 
@@ -114,7 +114,7 @@ A `RESTful API` follows a design pattern that uses the four parts of REST to int
 
 Post - This is used for adding new data.
 
-Get - This is used for retreiving data.
+Get - This is used for retrieving data.
 
 Put - This is for updating data. It's easy to remember this because put has a 'u' in it and update startes with it.
 
@@ -142,7 +142,7 @@ The `REST` methods and The `CRUD` operations correlate with each other like so:
 
 Javascript is a `synchronous` language. This means that it can only have one thing happen at a time.
 
-This causes a problem for us when we need to make an `HTTP request` to a server because requests can sometimes take a large amount of time to receieve a response. Since Javascript is synchronous, it will just make the request then think it's done. Meaning that when we recieve a response from the request it will not do anything with that response. 
+This causes a problem for us when we need to make an `HTTP request` to a server because requests can sometimes take a large amount of time to receieve a response. Since Javascript is synchronous, it will just make the request then think it's done. Meaning that when we receive a response from the request it will not do anything with that response. 
 
 So we need to make our code run `asynchronous`.
 
@@ -199,14 +199,14 @@ class Example extends Component {
     render(){
         return (
             <div>
-                <h1>This is an example class component to show off the component did mount hook</h1>
+                <h1>This is an example class component to show off the componentDidMount hook</h1>
             </div>
         )
     }
 }
 ```
 
-### Component Did Mount
+### componentDidMount
 
 `componentDidMount` is the hook we can use to have code immediately executed when the component `mounts` to the web page.
 
@@ -262,15 +262,15 @@ At the top of the file that we plan to use `axios`, go ahead and `import` the pa
 import axios from 'axios'
 ```
 
-This will bring it into library into our code so we can use it.
+This will bring it into our code so we can use it.
 
 ### Using Axios
 
 > Note: Refer to 'src/App.js' for an example
 
-Axios returns a `promise` in Javascript. A promise is a special object in javascript that will hold a response object from an http request.
+Axios returns a `promise` in JavaScript. A promise is a special object in JavaScript that will hold a response object from an http request.
 
-This allows us to asynchronously handle Javascript code.
+This allows us to asynchronously handle JavaScript code.
 
 ```javascript
 const promise = axios.get('http://swapi.co/api/people');
