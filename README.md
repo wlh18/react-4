@@ -2,6 +2,10 @@
 
 In this lecture we talk about the interwebs and how we can pass data over the network.
 
+## Lecture Slides
+
+https://slides.com/mattbodily/deck-c99beb
+
 ## HTTP(S)
 
 HTTP stands for `Hyper Text Transfer Protocol`.
