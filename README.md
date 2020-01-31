@@ -4,7 +4,7 @@ In this lecture we talk about the interwebs and how we can pass data over the ne
 
 ## Lecture Slides
 
-https://slides.com/mattbodily/deck-c99beb
+https://slides.com/matias_perez/react-four
 
 ## HTTP(S)
 
