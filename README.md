@@ -1,35 +1,40 @@
-# React Four
 
-In this lecture we talk about the interwebs and how we can pass data over the network.
-
-## Lecture Slides
-
-https://slides.com/matias_perez/react-four
+## Lecture Slides: https://slides.com/matias_perez/react-four
 
 # Student Learning Objectives
 
-* Student can describe the parts of a URL
-* Student can describe CRUD
-* Student can describe REST
-* Student can identify best practice for get, put, post, and delete
-* Student can identify a URL used for REST and a URL used to deliver HTML content
-* Student knows what the body is in an http request
-* Student can use params in http request URLs
-* Student can send data in the body of http requests
-* Student can write JSON
-* Student understands promises help with asynchronous code
-* Student can describe the difference between sychronous and asynchronous javascript code
-* Student can correctly create a .then to handle a promise
-* Student understands when componentDidMount fires in the react lifecycle
-* Student can install and import axios
-* Student can perform a GET with axios
-* Student can perform a PUT with axios
-* Student can perform a POST with axios
-* Student can perform a DELETE with axios
-* Student can put data from axios results onto state
-* Student can send data from user input with axios requests
-* Student can invoke axios in a click event
-* Student can invoke axios in componentDidMount
+<details>
+    <summary>JavaScript</summary>
+    <ul>
+        <li>Student understands promises help with asynchronous code</li>
+        <li>Student can describe the difference between sychronous and asynchronous javascript code</li>
+        <li>Student can correctly create a .then to handle a promise</li>
+    </ul>
+</details>
+
+<details>
+    <summary>Axios | HTTP | REST | CRUD</summary>
+    <ul>
+        <li>Student can describe the parts of a URL</li>
+        <li>Student can describe CRUD</li>
+        <li>Student can describe REST</li>
+        <li>Student can identify best practice for get, put, post, and delete</li>
+        <li>Student can identify a URL used for REST and a URL used to deliver HTML content</li>
+        <li>Student knows what the body is in an http request</li>
+        <li>Student can use params in http request URLs</li>
+        <li>Student can send data in the body of http requests</li>
+        <li>Student can write JSON</li>
+        <li>Student can install and import axios</li>
+        <li>Student can perform a GET with axios</li>
+        <li>Student can perform a PUT with axios</li>
+        <li>Student can perform a POST with axios</li>
+        <li>Student can perform a DELETE with axios</li>
+        <li>Student can put data from axios results onto state</li>
+        <li>Student can send data from user input with axios requests</li>
+        <li>Student can invoke axios in a click event</li>
+        <li>Student can invoke axios in componentDidMount</li>
+    </ul>
+</details>
 
 ## HTTP(S)
 
@@ -71,11 +76,11 @@ The URL is a mixture of the protocol, domain, and endpoint being requested.
 
 Above is an example of a `URL`.
 
-Protocol - https://
+* Protocol - https://
 
-Domain - devmountain.com
+* Domain - devmountain.com
 
-EndPoint - /about.html
+* EndPoint - /about.html
 
 ## Parts Of A Request
 
@@ -141,13 +146,13 @@ An API is a layer that we can interact with to send and get information from a s
 
 A `RESTful API` follows a design pattern that uses the four parts of REST to interact with it: `post`, `put`, `get`, and `delete`.
 
-Post - This is used for adding new data.
+* Post - This is used for adding new data.
 
-Get - This is used for retrieving data.
+* Get - This is used for retrieving data.
 
-Put - This is for updating data. It's easy to remember this because put has a 'u' in it and update startes with it.
+* Put - This is for updating data. It's easy to remember this because put has a 'u' in it and update startes with it.
 
-Delete - This is for removing data.
+* Delete - This is for removing data.
 
 Interacting with an API using all four of these methods are a way that we can follow a concept called `CRUD`.
 
