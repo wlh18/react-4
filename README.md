@@ -1,5 +1,5 @@
 
-## Lecture Slides: https://slides.com/matias_perez/react-four
+## Lecture Slides: https://slides.com/mattbodily/react-four#/
 
 # Student Learning Objectives
 
