@@ -361,3 +361,26 @@ DELETE - This method will recieve the url to hit as an argument. This acts as th
 ```javascript
 const promise = axios.delete('http://website.com/people/2');
 ```
+
+## Resources
+
+
+<details>
+
+<summary> <code> Axios </code> </summary>
+
+* [Axios Docs](https://github.com/axios/axios)
+* [using Axios in react video](https://www.youtube.com/watch?v=oQnojIyTXb8)
+* [Post, put, get and delete requests with axios](https://alligator.io/react/axios-react/)
+
+</details>
+
+<details>
+
+<summary> <code> Props </code> </summary>
+
+* [React Props](https://www.robinwieruch.de/react-pass-props-to-component/#react-props)
+* [Props inside a map method](https://www.robinwieruch.de/react-list-component)
+
+
+</details>
