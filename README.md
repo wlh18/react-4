@@ -1,7 +1,12 @@
+# React 4
 
-## Lecture Slides: https://slides.com/mattbodily/react-four#/
+Lecture Slides: https://slides.com/dmweb/react-4
 
-# Student Learning Objectives
+Mini Project: https://github.com/DevMountain/react-3-mini
+
+Afternoon Project: https://github.com/DevMountain/react-3-afternoon
+
+## Student Learning Objectives
 
 <details>
     <summary>JavaScript</summary>
